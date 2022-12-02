@@ -74,7 +74,7 @@ func (m *Multitasking) Run() ([]interface{}, error) {
 	return result, nil
 }
 
-func NewLRModule(name string, threads int) *Multitasking {
+func NewMultitasking(name string, threads int) *Multitasking {
 	lrm := &Multitasking{
 		name:       name,
 		threads:    threads,
