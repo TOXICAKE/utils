@@ -1,3 +1,3 @@
-module gitlab.huaun.com/xuzy/utils
+module gitlab.huaun.com/lr/utils
 
 go 1.17

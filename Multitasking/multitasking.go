@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"gitlab.huaun.com/xuzy/utils"
+	"gitlab.huaun.com/lr/utils"
 	"reflect"
 	"sync"
 )
