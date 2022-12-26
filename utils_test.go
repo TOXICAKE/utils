@@ -16,7 +16,7 @@ type B struct {
 	OK   int
 }
 
-func TestReflect(t *testing.T) {
+func TestCopyStructByName(t *testing.T) {
 	a := A{
 		Arg1: "aaa",
 		Arg2: 3,
@@ -25,4 +25,15 @@ func TestReflect(t *testing.T) {
 	b := B{}
 	CopyStructByName(a, &b)
 	fmt.Println(b.Arg1, b.Arg2)
+}
+
+func TestCopyStructString(t *testing.T) {
+	a := A{
+		Arg1: "",
+		Arg2: 3,
+		OK:   false,
+	}
+	b := B{Arg1: "bb"}
+	CopyStructString(a, &b, true)
+	fmt.Println(b.Arg1, b.Arg2, b.OK)
 }
