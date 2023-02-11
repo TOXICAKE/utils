@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"gitlab.huaun.com/lr/utils"
+	"github.com/TOXICAKE/utils"
 	"reflect"
 	"sync"
 )
@@ -34,7 +34,7 @@ func (m *Multitasking) Run() ([]interface{}, error) {
 	var result []interface{}
 	utils.DebugEcho("Try run module '" + m.name + "'...")
 	if m.taskFunc == nil || m.execFunc == nil {
-		errors.New("Multitasking '" + m.name + "' must be registered")
+		return nil, errors.New("Multitasking '" + m.name + "' must be registered")
 	}
 
 	go func() {

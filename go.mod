@@ -1,3 +1,3 @@
-module gitlab.huaun.com/lr/utils
+module github.com/TOXICAKE/utils
 
-go 1.17
+go 1.19
